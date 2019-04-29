@@ -1,0 +1,112 @@
+.ctx-arrow-up {
+    width: 18px;
+    height: 18px;
+    background-color: #000000;
+    border-radius: 50%;
+    border-width: 0;
+    margin: 0;
+    padding: 6px 4px;
+    margin-top: -2px;
+}
+
+.ctx-arrow-up:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+    border-style: solid;
+    border-width: 0 5px 8px 5px;
+    border-color:  transparent transparent #e7e7e7 transparent;
+    margin-top: -2px;
+}
+
+.dropdown-wrp {
+    position: relative;
+}
+
+.dropdown-wrp .dropdown-head {
+    height: 40px;
+    border-radius: 6px;
+    background-color: #e7e7e7;
+    padding:  11px 12px 10px 37px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dropdown-wrp .dropdown-head .dropdown-label {
+    width: 100%;
+    min-height: 25px;
+    line-height: 20px;
+    text-align: left;
+    padding-top: 4px;
+}
+
+.dropdown-wrp .dropdown-head input {
+    border: 0;
+    width: 100%;
+    outline: 0;
+}
+
+.dropdown-wrp .dropdown-head ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    max-width: 90px;
+    overflow-x: scroll;
+    position: absolute;
+    bottom: -14px;
+    padding-bottom: 11px;
+}
+
+.dropdown-wrp .dropdown-head ul li {
+    margin-right: 5px;
+    background-color: #eee;
+    padding: 2px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    min-width: 90px;
+    word-break: keep-all;
+    height: 20px;
+    cursor: pointer;
+}
+
+.dropdown-wrp.active {
+    border-radius: 6px;
+    border: 1px solid #e7e7e7;
+}
+
+.dropdown-wrp.active .dropdown-head {
+    background-color: transparent;
+}
+
+.dropdown-wrp .dropdown-menu {
+    color: #313131;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 34px;
+    text-align: left;
+}
+
+.dropdown-wrp .dropdown-menu ul {
+    margin: 0;
+    padding: 0;
+    max-height: 170px;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.dropdown-wrp .dropdown-menu ul li {
+    cursor: pointer;
+    padding:  0 12px 0 37px;
+    list-style-type: none;
+    font-size: 18px;
+}
+
+.dropdown-wrp .dropdown-menu ul li:hover {
+    border: 1px solid #ebebeb;
+    background-color: #e7e7e7;
+}
+

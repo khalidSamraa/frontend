@@ -1,0 +1,17 @@
+.security-code > label {
+    padding-left: 0;
+}
+
+.card-details .card-date-wrp .dropdown-wrp .dropdown-head .dropdown-label {
+    text-align: center;
+}
+
+.edit-card form .security-code label {
+    padding-left: 0;
+}
+
+.edit-card form .card-number .form-control,
+.edit-card form .security-code .form-control,
+.edit-card form .security-code  {
+    text-align: center;
+}

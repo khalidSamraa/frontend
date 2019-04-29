@@ -1,0 +1,15 @@
+.user-email {
+    margin-top: 10px
+}
+
+.group-page .body-list-inside-secondary.interests .dropdown-head ul {
+    flex-wrap: inherit;
+}
+
+.group-page .dropdown-wrp .dropdown-menu ul li {
+    width: 100%;
+}
+
+.group-page .context-show {
+    border: 0;
+}

@@ -1,0 +1,41 @@
+doctype html
+html(lang='en')
+  head
+  
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title musinote | cart
+    meta(name='description', content='')
+    meta(name='keywords', content='')
+    meta(name='author', content='')
+    link(rel='shortcut icon', href='favicon.ico')
+    link(rel='stylesheet', href='css/main.css')
+    script.
+      document.documentElement.className = 'js';
+      $(document).ready(function () {
+        $("header").addClass('big');
+      });
+  body.loading
+    include includes/header
+    
+    main 
+      section.cart-page
+        .container-fluid
+          .row
+            .col-md-12.col-sm-12.col-xs-12.cart-big-title
+              h3 Shopping Cart is empty
+              
+              
+          .row.empty-cart
+            .col-md-12
+              p You have no items in your shopping cart.
+          .row.cart-go-checkout
+            .col-md-12.col-sm-12.col-xs-12
+              a.back-shopping-button(href="#") ← Continue shopping
+            
+            
+            
+    include includes/footer
+    
+      

@@ -1,0 +1,804 @@
+doctype html
+html(lang='en')
+  head
+  
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title musinote | catalog
+    meta(name='description', content='')
+    meta(name='keywords', content='')
+    meta(name='author', content='')
+    link(rel='shortcut icon', href='favicon.ico')
+    link(rel='stylesheet', href='css/main.css')
+    script.
+      document.documentElement.className = 'js';
+      
+  body.loading
+    include includes/header
+    
+    main
+      
+      section.catalog-nav
+        .container-fluid
+          .row.main-catalog-links
+            .col-md-12.col-sm-12.col-xs-12
+              ul.catalog-links-menu
+                li.active
+                  a(href="") 
+                    |Noten für Instrumente
+                  ul.drop
+                    li.active
+                      a(href="") Tasten
+                    li
+                      a(href="") Streicher
+                    li
+                      a(href="") Bläser
+                    li
+                      a(href="") Zupfinstrumente
+                    li
+                      a(href="") Schlaginstrumente
+                    li
+                      a(href="") Harmonika
+                li
+                  a(href="") 
+                    | Orchester / Ensemble
+                  ul.drop
+                    li
+                      a(href="") Orchester
+                    li
+                      a(href="") Bläser
+                    li
+                      a(href="") Kammermusik
+                    li
+                      a(href="") Band
+                    li
+                      a(href="") Zupfensembles
+                    li
+                      a(href="") Flexibles Ensemble
+                li
+                  a(href="") 
+                    |Chor / Gesang
+                  ul.drop
+                    li
+                      a(href="") Chor
+                    li
+                      a(href="") Gesang
+                li
+                  a(href="") 
+                    |Musik unterrichten
+                  ul.drop
+                    li
+                      a(href="") Kita & Elementare Musikerziehung
+                    li
+                      a(href="") Grundschule
+                    li
+                      a(href="") Sekundarstufen
+                    li
+                      a(href="") Geragogik / Senioren
+                    li
+                      a(href="") Studium
+                    li
+                      a(href="") Tasten
+                    li
+                      a(href="") Streicher
+                    li
+                      a(href="") Bläser
+                    li
+                      a(href="") Zupfinstrumente
+                    li
+                      a(href="") Schlaginstrumente
+                    li
+                      a(href="") Gesang
+                li
+                  a(href="") 
+                    |Multimedia
+                  ul.drop
+                    li
+                      a(href="") Bücher
+                    li
+                      a(href="") CDs, Multimedia
+                    li
+                      a(href="") Zubehör / Geschenke
+
+
+          .row.filters-catalog
+            .col-md-3.col-sm-3.col-xs-6.sort-box
+              span Sortieren nach: 
+              .select
+                select
+                  option Titel
+                  option 20
+                  option 30
+                .select__arrow
+            .col-md-6.col-sm-6.col-xs-12.catalog-page-title
+              h1 Testeninstrumente
+            .col-md-3.col-sm-3.col-xs-6.zeuge-box
+              span Zeige:
+              .select
+                select
+                  option 10
+                  option 20
+                  option 30
+                .select__arrow
+              span  pro Seite
+          .row.sub-catalog
+            .col-md-12
+              ul.sub-categories-list
+                li
+                  a(href="") Klavier
+                li
+                  a(href="") Orgel
+                li
+                  a(href="") Keyboard
+                li
+                  a(href="") E-Orgel
+                li
+                  a(href="") Akkordeon
+                li
+                  a(href="") Cembalo
+                li
+                  a(href="") E-Piano
+                li
+                  a(href="") Sonstige
+            //.col-md-6.page-numeration
+              ul
+                li
+                  a(href="")
+                    span.first
+                li
+                  a(href="") 1
+                li
+                  a(href="") 2
+                li
+                  a(href="") 3
+                li
+                  a(href="") 4
+                li
+                  a(href="") 5
+                li
+                  a(href="") 6
+                li
+                  a(href="") 7
+                li
+                  a(href="") 8
+                li
+                  a(href="")
+                    span.last
+
+      section.product-gird 
+        .container-fluid
+          .row.large-height-items
+            .col-md-2.col-sm-4.col-xs-6
+              .lite-product
+                .top-row
+                  .pic(style="background-image: url(media/images/cover/7.jpg)")
+                .middle-row
+                  a.link-to-product(href="")
+                    h2.product-title  Das Folk- und Volksliederbuch für Alt und Jung
+                    p.product-desc 100 leicht arrangierte Folksongs und Volkslieder für Gesang und Ukulele
+                  ul
+                    li
+                      span Bearbeiter: 
+                      a(href="") Müller, Sebastian
+                    li
+                      span Ausgabe: 
+                      | Liederbuch
+                    li
+                      span Besetzung: 
+                      | Gesang und Ukulele
+                    li
+                      span Bestell-Nr.: 
+                      | O4205
+                .row.bottom-row
+                  .col-xs-6.price-box
+                    p.price 15,00 € 
+                  .col-xs-6.add-cart-box
+                    a.add-to-cart(href="")
+                      include includes/cart-icon
+            .col-md-2.col-sm-4.col-xs-6
+              .lite-product
+                .top-row
+                  .pic(style="background-image: url(media/images/cover/8.jpg)")
+                .middle-row
+                  a.link-to-product(href="")
+                    h2.product-title  Richard Strauss. Späte Aufzeichnungen
+                    p.product-desc Herausgegeben von Marion Beyer, Jürgen May und Walter Werbeck
+                  ul
+                    li
+                      span Autor: 
+                      a(href="") Strauss, Richard
+                    li
+                      span Herausgeber: 
+                      a(href="") Werbeck, Walter
+                    li
+                      span Sprache: 
+                      |deutsch
+                    li
+                      span Bestell-Nr.: 
+                      | ED 22662
+                .row.bottom-row
+                  .col-xs-6.price-box
+                    p.price 59,00 €
+                  .col-xs-6.add-cart-box
+                    a.add-to-cart(href="")
+                      include includes/cart-icon
+            
+
+            .col-md-2.col-sm-4.col-xs-6
+              .lite-product
+                .top-row
+                  .pic(style="background-image: url(media/images/cover/9.jpg)")
+                .middle-row
+                  a.link-to-product(href="")
+                    h2.product-title  24 Short and Easy Pieces
+                    p.product-desc Intended First Lessons for the Pianoforte
+                  ul
+                    li
+                      span Komponist: 
+                      a(href="") Reinagle, Alexanderli
+                    li
+                      span Herausgeber: 
+                      a(href="") Heumann, Hans-Günter
+                    
+                    li
+                      span Besetzung: 
+                      | Klavier
+                    li
+                      span Bestell-Nr.: 
+                      | O4205
+                .row.bottom-row
+                  .col-xs-6.price-box
+                    p.price 5,25 € 
+                  .col-xs-6.add-cart-box
+                    a.add-to-cart(href="")
+                      include includes/cart-icon
+            .col-md-2.col-sm-4.col-xs-6
+              .lite-product
+                .top-row
+                  .pic(style="background-image: url(media/images/cover/10.jpg)")
+                .middle-row
+                  a.link-to-product(href="")
+                    h2.product-title  Das Folk- und Volksliederbuch für Alt und Jung
+                    p.product-desc 100 leicht arrangierte Folksongs und Volkslieder für Gesang und Ukulele
+                  ul
+                    li
+                      span Bearbeiter: 
+                      a(href="") Müller, Sebastian
+                    li
+                      span Ausgabe: 
+                      | Liederbuch
+                    li
+                      span Besetzung: 
+                      | Gesang und Ukulele
+                    li
+                      span Bestell-Nr.: 
+                      | O4205
+                .row.bottom-row
+                  .col-xs-6.price-box
+                    p.price 15,00 € 
+                  .col-xs-6.add-cart-box
+                    a.add-to-cart(href="")
+                      include includes/cart-icon
+            .col-md-2.col-sm-4.col-xs-6
+              .lite-product
+                .top-row
+                  .pic(style="background-image: url(media/images/cover/11.jpg)")
+                .middle-row
+                  a.link-to-product(href="")
+                    h2.product-title Richard Strauss. Späte Aufzeichnungen
+                    p.product-desc Herausgegeben von Marion Beyer, Jürgen May und Walter Werbeck
+                  ul
+                    li
+                      span Autor: 
+                      a(href="") Strauss, Richard
+                    li
+                      span Herausgeber: 
+                      a(href="") Werbeck, Walter
+                    li
+                      span Sprache: 
+                      |deutsch
+                    li
+                      span Bestell-Nr.: 
+                      | ED 22662
+                .row.bottom-row
+                  .col-xs-6.price-box
+                    p.price 59,00 €
+                  .col-xs-6.add-cart-box
+                    a.add-to-cart(href="")
+                      include includes/cart-icon
+            
+
+            .col-md-2.col-sm-4.col-xs-6
+              .lite-product
+                .top-row
+                  .pic(style="background-image: url(media/images/cover/12.jpg)")
+                .middle-row
+                  a.link-to-product(href="")
+                    h2.product-title 24 Short and Easy Pieces
+                    p.product-desc Intended First Lessons for the Pianoforte
+                  ul
+                    li
+                      span Komponist: 
+                      a(href="") Reinagle, Alexanderli
+                    li
+                      span Herausgeber: 
+                      a(href="") Heumann, Hans-Günter
+                    
+                    li
+                      span Besetzung: 
+                      |Klavier
+                    li
+                      span Bestell-Nr.: 
+                      | O4205
+                .row.bottom-row
+                  .col-xs-6.price-box
+                    p.price 5,25 € 
+                  .col-xs-6.add-cart-box
+                    a.add-to-cart(href="")
+                      include includes/cart-icon
+          .row.large-height-items
+            .col-md-2.col-sm-4.col-xs-6
+              .lite-product
+                .top-row
+                  .pic(style="background-image: url(media/images/cover/1.jpg)")
+                .middle-row
+                  a.link-to-product(href="")
+                    h2.product-title  The Children of David
+                    p.product-desc Five Modern Psalms
+                  ul
+                    li
+                      span Komponist: 
+                      a(href="") Mechem, Kirke L.
+                    li
+                      span Besetzung: 
+                      | Mezzo-Sopran Solo
+                    li
+                      span Ausgabe:
+                      | Sing- und Spielpartitur
+                    li
+                      span Bestell-Nr.: 
+                      | 10,00 €
+                .row.bottom-row
+                  .col-xs-6.price-box
+                    p.price 24,50 €
+                  .col-xs-6.add-cart-box
+                    a.add-to-cart(href="")
+                      include includes/cart-icon
+            .col-md-2.col-sm-4.col-xs-6
+              .lite-product
+                .top-row
+                  .pic(style="background-image: url(media/images/cover/2.jpg)")
+                .middle-row
+                  a.link-to-product(href="")
+                    h2.product-title  Mein Weihnachtsbuch
+                    p.product-desc 40 Weihnachtslieder mit vollständigen Texten (Hardcover)
+                  ul
+                    li
+                      span Bearbeiter:
+                      a(href="") Lechner, Lothar
+                    li
+                      span Besetzung: 
+                      | Klavier 2- und 4-händig
+                    li
+                      span Ausgabe: 
+                      | Hardcover
+                    li
+                      span Bestell-Nr.: 
+                      |  ED 22836
+                .row.bottom-row
+                  .col-xs-6.price-box
+                    p.price 18,50 €
+                  .col-xs-6.add-cart-box
+                    a.add-to-cart(href="")
+                      include includes/cart-icon
+            .col-md-4.col-sm-6.col-xs-12
+              .big-product
+                .row
+                  .col-sm-6.col-xs-6.middle-row
+                    a.link-to-product(href="")
+                      h2.product-title Das Fetenbuch für Alt und Jung
+                      p.product-desc 100 Lieder und Hits zum Mitsingen, leicht arrangiert für Gesang und Gitarre Die beliebtesten Songs für Feiern und Feste
+                    ul
+                      li
+                        span Bearbeiter: 
+                        a(href="") Müller, Sebastian
+                      li
+                        span Ausgabe: 
+                        | Liederbuch
+                      li
+                        span Besetzung: 
+                        | Gesang und Gitarre
+                      li
+                        span Bestell-Nr.: 
+                        | O4205
+                    .row.bottom-row
+                      .col-xs-6.price-box
+                        p.price 14,50 €
+                      .col-xs-6.add-cart-box
+                        a.add-to-cart(href="")
+                          include includes/cart-icon
+                  .col-sm-6.col-xs-6.top-row
+                    .pic(style="background-image: url(media/images/cover/3.jpg)")
+            .col-md-2
+              .lite-product
+                .top-row
+                  .pic(style="background-image: url(media/images/cover/4.jpg)")
+                .middle-row
+                  a.link-to-product(href="")
+                    h2.product-title  Saxophone Mantras
+                    p.product-desc 15 Technical Studies for Saxophone
+                  ul
+                    li
+                      span Komponist: 
+                      | Enzel, Christoph
+                    li
+                      span Besetzung: 
+                      | Saxophon
+                    li
+                      span Bestell-Nr.: 
+                      |  ED 20435
+                .row.bottom-row
+                  .col-xs-6.price-box
+                    p.price 14,95 €
+                  .col-xs-6.add-cart-box
+                    a.add-to-cart(href="")
+                      include includes/cart-icon
+            .col-md-2
+              .lite-product
+                .top-row
+                  .pic(style="background-image: url(media/images/cover/5.jpg)")
+                .middle-row
+                  a.link-to-product(href="")
+                    h2.product-title  The Saxophone Method
+                    p.product-desc Das zweibändige, englischsprachige Lehrwerk
+                  ul
+                    li
+                      span Autor: 
+                      a(href="") O'Neill, John
+                    li
+                      span Bandnummer: 
+                      | Vol. 1
+                    li
+                      span Besetzung: 
+                      | Alt-Saxophon
+                    li
+                      span Bestell-Nr.: 
+                      | O4205
+                .row.bottom-row
+                  .col-xs-6.price-box
+                    p.price 5,25 € 
+                  .col-xs-6.add-cart-box
+                    a.add-to-cart(href="")
+                      include includes/cart-icon
+          
+          
+          //.row.text-title
+            .col-md-12
+              p 2 — column in row ↓
+          //.row.two-column-row
+            .col-md-6
+              .large-product
+                .row
+                  .col-sm-6.top-row
+                    .pic(style="background-image: url(media/images/composer/15.jpg)")
+                  .col-sm-6.middle-row
+                    h2.product-title Adult Piano Book Sight Rout...
+                    ul
+                      li
+                        span Komponist: 
+                        a(href="") Eckstein, Maxwell
+                      li
+                        span Bandnummer: 
+                        a(href="") Band 2
+                      li
+                        span Besetzung: 
+                        a(href="") Klavier
+                      li
+                        span Bestell-Nr.: 
+                        | O4205
+                    .row.bottom-row
+                      .col-xs-6.price-box
+                        p.price 5,25 € 
+                      .col-xs-6.add-cart-box
+                        a.add-to-cart(href="")
+                          include includes/cart-icon
+            .col-md-6
+              .large-product
+                .row
+                  .col-sm-6.top-row
+                    .pic(style="background-image: url(media/images/composer/8.jpg)")
+                  .col-sm-6.middle-row
+                    h2.product-title Adult Piano Book Sight Rout...
+                    ul
+                      li
+                        span Komponist: 
+                        a(href="") Eckstein, Maxwell
+                      li
+                        span Bandnummer: 
+                        a(href="") Band 2
+                      li
+                        span Besetzung: 
+                        a(href="") Klavier
+                      li
+                        span Bestell-Nr.: 
+                        | O4205
+                    .row.bottom-row
+                      .col-xs-6.price-box
+                        p.price 5,25 € 
+                      .col-xs-6.add-cart-box
+                        a.add-to-cart(href="")
+                          include includes/cart-icon
+          //.row.two-column-row
+            .col-md-6
+              .large-product
+                .row
+                  .col-sm-6.top-row
+                    .pic(style="background-image: url(media/images/composer/8.jpg)")
+                  .col-sm-6.middle-row
+                    h2.product-title Adult Piano Book Sight Rout...
+                    ul
+                      li
+                        span Komponist: 
+                        a(href="") Eckstein, Maxwell
+                      li
+                        span Bandnummer: 
+                        a(href="") Band 2
+                      li
+                        span Besetzung: 
+                        a(href="") Klavier
+                      li
+                        span Bestell-Nr.: 
+                        | O4205
+                    .row.bottom-row
+                      .col-xs-6.price-box
+                        p.price 5,25 € 
+                      .col-xs-6.add-cart-box
+                        a.add-to-cart(href="")
+                          include includes/cart-icon
+            .col-md-6
+              .large-product
+                .row
+                  .col-sm-6.top-row
+                    .pic(style="background-image: url(media/images/composer/8.jpg)")
+                  .col-sm-6.middle-row
+                    h2.product-title Adult Piano Book Sight Rout...
+                    ul
+                      li
+                        span Komponist: 
+                        a(href="") Eckstein, Maxwell
+                      li
+                        span Bandnummer: 
+                        a(href="") Band 2
+                      li
+                        span Besetzung: 
+                        a(href="") Klavier
+                      li
+                        span Bestell-Nr.: 
+                        | O4205
+                    .row.bottom-row
+                      .col-xs-6.price-box
+                        p.price 5,25 € 
+                      .col-xs-6.add-cart-box
+                        a.add-to-cart(href="")
+                          include includes/cart-icon  
+          
+          //.row.text-title
+            .col-md-12
+              p 4 — column in row ↓
+          //.row.four-column-row
+            .col-md-3
+              .skinny-product
+                .top-row
+                  .pic(style="background-image: url(media/images/composer/4.jpg)")
+                .middle-row
+                  .product-title
+                    h2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, dolores!
+                  ul
+                    li
+                      span Komponist: 
+                      a(href="") Eckstein, Maxwell
+                    li
+                      span Bandnummer: 
+                      a(href="") Band 2 
+                    li
+                      span Besetzung: 
+                      a(href="") Klavier
+                    li
+                      span Bestell-Nr.: 
+                      | O4205
+                .row.bottom-row
+                  .col-xs-6.price-box
+                    p.price 5,25 € 
+                  .col-xs-6.add-cart-box
+                    a.add-to-cart(href="")
+                      include includes/cart-icon
+            .col-md-3
+              .skinny-product
+                .top-row
+                  .pic(style="background-image: url(media/images/composer/4.jpg)")
+                .middle-row
+                  .product-title
+                    h2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, dolores!
+                  ul
+                    li
+                      span Komponist: 
+                      a(href="") Eckstein, Maxwell
+                    li
+                      span Bandnummer: 
+                      a(href="") Band 2
+                    li
+                      span Besetzung: 
+                      a(href="") Klavier
+                    li
+                      span Bestell-Nr.: 
+                      | O4205
+                .row.bottom-row
+                  .col-xs-6.price-box
+                    p.price 5,25 € 
+                  .col-xs-6.add-cart-box
+                    a.add-to-cart(href="")
+                      include includes/cart-icon
+                      
+                      
+            .col-md-6
+              .big-product
+                .row
+                  .col-sm-6.middle-row
+                    h2.product-title Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    p.product-description  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, doloribus. Facere reprehenderit illo pariatur...
+                    ul
+                      li
+                        span Komponist: 
+                        a(href="") Eckstein, Maxwell
+                      li
+                        span Bandnummer: 
+                        a(href="") Band 2
+                      li
+                        span Besetzung: 
+                        a(href="") Klavier
+                      li
+                        span Bestell-Nr.: 
+                        | O4205
+                    .row.bottom-row
+                      .col-xs-6.price-box
+                        p.price 5,25 € 
+                      .col-xs-6.add-cart-box
+                        a.add-to-cart(href="")
+                          include includes/cart-icon
+                  .col-sm-6.top-row
+                    .pic(style="background-image: url(media/images/composer/7.jpg)")
+
+          //.row.four-column-row
+            .col-md-6
+              .big-product
+                .row
+                  .col-sm-6.middle-row
+                    h2.product-title Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    p.product-description  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, doloribus. Facere reprehenderit illo pariatur...
+                    ul
+                      li
+                        span Komponist: 
+                        a(href="") Eckstein, Maxwell
+                      li
+                        span Bandnummer: 
+                        a(href="") Band 2
+                      li
+                        span Besetzung: 
+                        a(href="") Klavier
+                      li
+                        span Bestell-Nr.: 
+                        | O4205
+                    .row.bottom-row
+                      .col-xs-6.price-box
+                        p.price 5,25 € 
+                      .col-xs-6.add-cart-box
+                        a.add-to-cart(href="")
+                          include includes/cart-icon
+                  .col-sm-6.top-row
+                    .pic(style="background-image: url(media/images/composer/7.jpg)")
+            .col-md-3
+              .skinny-product
+                .top-row
+                  .pic(style="background-image: url(media/images/composer/4.jpg)")
+                .middle-row
+                  .product-title
+                    h2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, dolores!
+                  ul
+                    li
+                      span Komponist: 
+                      a(href="") Eckstein, Maxwell
+                    li
+                      span Bandnummer: 
+                      a(href="") Band 2 
+                    li
+                      span Besetzung: 
+                      a(href="") Klavier
+                    li
+                      span Bestell-Nr.: 
+                      | O4205
+                .row.bottom-row
+                  .col-xs-6.price-box
+                    p.price 5,25 € 
+                  .col-xs-6.add-cart-box
+                    a.add-to-cart(href="")
+                      include includes/cart-icon
+            .col-md-3
+              .skinny-product
+                .top-row
+                  .pic(style="background-image: url(media/images/composer/4.jpg)")
+                .middle-row
+                  .product-title
+                    h2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, dolores!
+                  ul
+                    li
+                      span Komponist: 
+                      a(href="") Eckstein, Maxwell
+                    li
+                      span Bandnummer: 
+                      a(href="") Band 2
+                    li
+                      span Besetzung: 
+                      a(href="") Klavier
+                    li
+                      span Bestell-Nr.: 
+                      | O4205
+                .row.bottom-row
+                  .col-xs-6.price-box
+                    p.price 5,25 € 
+                  .col-xs-6.add-cart-box
+                    a.add-to-cart(href="")
+                      include includes/cart-icon
+                      
+                      
+            
+          
+          
+          .row.page-numeration-box
+            .col-md-12
+              .page-numeration
+                ul
+                  li
+                    a(href="")
+                      span.first
+                  li.active
+                    a(href="") 1
+                  li
+                    a(href="") 2
+                  li
+                    a(href="") 3
+                  li
+                    a(href="") 4
+                  li
+                    a(href="") 5
+                  li
+                    a(href="") 6
+                  li
+                    a(href="") 7
+                  li
+                    a(href="") 8
+                  li
+                    a(href="") ...
+                  li
+                    a(href="") 103
+                  
+                  li
+                    a(href="")
+                      span.last
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+    include includes/footer
+    script.
+      $(document).ready(function () {
+        $("header").addClass('catalog-header');
+      });
+      

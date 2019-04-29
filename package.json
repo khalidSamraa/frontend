@@ -1,0 +1,42 @@
+{
+  "name": "dimusco",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^3.9.2",
+    "axios": "^0.17.1",
+    "classnames": "^2.2.5",
+    "crypto-js": "^3.1.9-1",
+    "moment": "^2.20.1",
+    "paypal-checkout": "^4.0.204",
+    "query-string": "^5.0.1",
+    "rc-slider": "^8.6.4",
+    "react": "^16.8.4",
+    "react-content-loader": "^2.0.2",
+    "react-datepicker": "^1.0.4",
+    "react-dom": "^16.8.4",
+    "react-moment": "^0.7.0",
+    "react-notify-toast": "^0.4.0",
+    "react-number-format": "^3.2.0",
+    "react-owl-carousel": "^2.2.0",
+    "react-paginate": "^5.2.3",
+    "react-redux": "^5.0.6",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.0.17",
+    "react-validation": "^3.0.7",
+    "reactstrap": "^5.0.0-alpha.4",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0",
+    "validator": "^9.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "webpack-bundle-analyzer": "^2.9.2"
+  }
+}

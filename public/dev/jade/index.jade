@@ -1,0 +1,452 @@
+doctype html
+html(lang='en')
+  head
+  
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title musinote
+    meta(name='description', content='')
+    meta(name='keywords', content='')
+    meta(name='author', content='')
+    link(rel='shortcut icon', href='favicon.ico')
+    link(rel='stylesheet', href='css/main.css')
+    script.
+      document.documentElement.className = 'js';
+  body.loading
+    include includes/header
+    
+    main
+    
+      // search and folters
+      section.search-area
+        .row.hero-text
+          .col-md-12
+            h3 
+              | What do you 
+              span Wanna
+              |  play today?
+            .slider-artist
+              .item
+                a(href="")
+                  .pic(style="background-image: url(media/images/composer/person/1.jpg)")
+                  | Karl  Jenkins
+              .item
+                a(href="")
+                  .pic(style="background-image: url(media/images/composer/person/2.jpg)")
+                  | Leonard  Bernstein
+              .item
+                a(href="")
+                  .pic(style="background-image: url(media/images/composer/person/3.jpg)")
+                  | Emil  Hartmann
+              .item
+                a(href="")
+                  .pic(style="background-image: url(media/images/composer/person/4.jpg)")
+                  | Nikolai  Kapustin
+              
+        .row.search-form-box
+          .bg(style="background-image: url(media/images/composer/4.jpg)")
+          //.search-bg-slider
+            .item
+              .bg(style="background-image: url(media/images/composer/1.jpg)")
+            .item
+              .bg(style="background-image: url(media/images/composer/2.jpg)")
+            .item
+              .bg(style="background-image: url(media/images/composer/3.jpg)")
+            .item
+              
+            
+          .col-md-12
+            form(action="")
+              .search-input
+                input.search-text(type="text" placeholder="Search...")
+                button.send-search
+                  span.search-icon(style="background-image: url(media/images/icon/search.svg)")
+                  | Find
+                  
+                  
+        // filters                  
+        .row.search-controls
+          .col-md-12
+            ul#tab.jtab-ul
+              li
+                a(href='#' id='composer')
+                  //.scene
+                    img(src="media/images/icon/composer.gif", alt="")
+                  p 
+                    | Composer
+              li
+                a(href='#' id="era")
+                  //.scene.era-scene
+                    .dot-line
+                      span
+                      span
+                      span
+                      span
+                  p 
+                    | Era
+              li
+                a(href='#' id="instrument")
+                  //.scene
+                    img(src="media/images/icon/instrument.gif", alt="")
+                  p 
+                    | Instrument 
+              li
+                a(href='#' id='durtion')
+                  //.scene.duration-scene
+                    .timer
+                      .cell
+                        .numbers.tenminute.movesix 0 1 2 3 4 5 6
+                      .cell
+                        .numbers.minute.moveten 0 1 2 3 4 5 6 7 8 9 
+                      .cell
+                        .numbers.dividers :
+                      .cell
+                        .numbers.tensecond.movesix 0 1 2 3 4 5 6 
+                      .cell
+                        .numbers.second.moveten 0 1 2 3 4 5 6 7 8 9 
+                      .cell
+                        .numbers.dividers :
+                      .cell
+                        .numbers.milisecond.moveten 0 1 2 3 4 5 6 7 8 9 
+                      .cell
+                        .numbers.tenmilisecond.moveten 0 1 2 3 4 5 6 7 8 9 
+                  p 
+                    | Durtion
+                    
+              li
+                a(href='#' id='more')
+                  //.scene.more-scene
+                    .dot
+                      span
+                      span
+                      span
+                  p 
+                    | More  
+                    
+                    
+                    
+            // content filters        
+                    
+            .jtab-content-list
+              #tab_composer.jtab-content.composer
+                ul
+                  li
+                    h2 A
+                    a(href="")
+                      |A. Albano, B. Lowe
+                      span 1
+                    a(href="")
+                      | A. Spector
+                      span 1
+                    a(href="")
+                      | Aa, Michel van der
+                      span 16
+                    a(href="")
+                      | A Albano
+                      span 1
+                    a(href="")
+                      | Aaron Copland
+                      span 8
+                    a(href="")
+                      | Acker, Dieter
+                      span 4
+                    a(href="")
+                      | Adam Guettel
+                      span 59
+                    a(href="")
+                      | Adams, John
+                      span 284
+                    a(href="")
+                      | Adler, Samuel
+                      span 5
+                    a(href="")
+                      | Akira Ifukube
+                      span 55
+                    
+                  li
+                    h2 B
+                    a(href="")
+                      | Bach, Johann Sebastian
+                      span 25
+                    a(href="")
+                      | Barnett, Carol
+                      span 12
+                    a(href="")
+                      | Bartók, Béla
+                      span 346
+                    a(href="")
+                      | Bartok, Bela
+                      span 44
+                    a(href="")
+                      | Bazelon, Irwin
+                      span 14
+                    a(href="")
+                      | Beeson, Jack
+                      span 93
+                    a(href="")
+                      | Benjamin, Arthur
+                      span 11
+                    a(href="")
+                      | Benjamin Britten
+                      span 3
+                    a(href="")
+                      | Benoit, David
+                      span 8
+                    a(href="")
+                      | Bernstein, Leonard
+                      span 781
+                    a(href="")
+                      | Bernstein, Leonard
+                      span 5
+                  li
+                    h2 C
+                    a(href="")
+                      | Carter, Elliott
+                      span 222
+                    a(href="")
+                      | Castelnuovo-Tedesco, Mario
+                      span 7
+                    a(href="")
+                      | Chanler, Theodore
+                      span 16
+                    a(href="")
+                      | Chapela, Enrico
+                      span 9
+                    a(href="")
+                      | Chavez, Carlos
+                      span 6
+                    a(href="")
+                      | Chen, Qigang
+                      span 3
+                  li
+                    h2 D
+                    a(href="")
+                      | D'Rivera, Paquito
+                      span 18
+                    a(href="")
+                      | Daugherty, Michael
+                      span 79
+                    a(href="")
+                      | David Del Tredici
+                      span 5
+                    a(href="")
+                      | David Gilmour/Polly Samson
+                      span 3
+                    a(href="")
+                      | David Gilmour/Various
+                      span 2
+                    a(href="")
+                      | Dean, Brett
+                      span 66
+                    a(href="")
+                      | Debussy, Claude
+                      span 7
+                    a(href="")
+                      | Dee C'rell
+                      span 7
+                    a(href="")
+                      | Delius, Frederick
+                      span 111
+              #tab_era.jtab-content.era
+                .era-line
+                form.era-checkbox-form(action="")
+                  .checbox-item
+                    input#baroque(type="checkbox")
+                    label(for="baroque") 
+                      span.name Baroque
+                      span.years 1600 — 1750 
+                  .checbox-item
+                    input#classical(type="checkbox")
+                    label(for="classical") 
+                      span.name Classical
+                      span.years  1750 — 1820
+                  .checbox-item
+                    input#romantic(type="checkbox")
+                    label(for="romantic") 
+                      span.name Romantic
+                      span.years 1780 — 1910
+                  .checbox-item
+                    input#modern(type="checkbox")
+                    label(for="modern") 
+                      span.name Modern
+                      span.years 1890 — 1975
+              #tab_instrument.jtab-content.instrument
+                ul
+                  li
+                    a(href="") 
+                      | Accordion
+                      span 52
+                  li
+                    a(href="") 
+                      | Background Vocals
+                      span 207
+                  li
+                    a(href="") 
+                      | Banjo
+                      span 89
+                  li
+                    a(href="") 
+                      | Bass
+                      span 4.258
+                  li
+                    a(href="") 
+                      | Bass Guitar
+                      span 1.204
+                  li
+                    a(href="") 
+                      | Brass
+                      span 3.414
+                  li
+                    a(href="") 
+                      | Cello
+                      span 396
+                  li
+                    a(href="") 
+                      | Clarinet
+                      span 312
+                  li
+                    a(href="") 
+                      | Drum kit / Percussion
+                      span 2.265
+                  li
+                    a(href="") 
+                      | Drum Programming
+                      span 1.282
+                  li
+                    a(href="") 
+                      | Drums / Percussion
+                      span 4.206
+                  li
+                    a(href="") 
+                      | Electric Piano
+                      span 280
+                  li
+                    a(href="") 
+                      | Female Vocal
+                      span 371
+                  li
+                    a(href="") 
+                      | Guitar - acoustic
+                      span 1.500
+                  li
+                    a(href="") 
+                      | Guitar - electric
+                      span 3.564
+                  li
+                    a(href="") 
+                      | Harp
+                      span 219
+              #tab_durtion.jtab-content.duration
+                .duration-slider
+                  .slider-line
+                    .slider-dot.min
+                      span.slider-count 1:02
+                    .slider-dot.max
+                      span.slider-count 5:33
+                  svg(width='100%', height='100')
+                    line(x1='0', y1='0', x2='100%', y2='0', stroke='#999', stroke-width='50', stroke-dasharray='1 28')
+              #tab_more.jtab-content.more
+                ul
+                  li
+                    h2 Mood
+                    a(href="")
+                      |Funny
+                      span 579
+                    a(href="")
+                      | Cool
+                      span 1534
+                    a(href="")
+                      | Relaxed
+                      span 164
+
+
+      // ----- end search    
+          
+      
+                
+      // grid news items                  
+      section.news-grid
+        .container-fluid
+          .row.floor-one
+            
+            .col-sm-4.two-col-box
+              .row
+                .col-md-6.text-box
+                  h3  Lorem ipsum dolor sit amet, consectetur adipisicing.
+                  a.read-more(href="") read more about this
+                .col-md-6.pic-box
+                  .pic(style="background-image: url(media/images/girl.jpg)")
+                  a(href="") 
+                    span Adelaide Borghi-Mamo    
+                  
+            .col-sm-4.hover-slider-box
+              .hover-slider-person
+                a(href="") Maddalena Allegranti
+                .item.show
+                  .pic(style="background-image: url(media/images/composer/6.jpg)")
+                .item
+                  .pic(style="background-image: url(media/images/composer/7.jpg)")
+                .item
+                  .pic(style="background-image: url(media/images/composer/8.jpg)")
+            .col-sm-4
+              .row.bottom-half
+                .col-md-12
+                  .pic(style="background-image: url(media/images/opera.jpg)")
+                  a.big-white-button(href="") 
+                    |Dante
+                    br
+                    |Alighieri
+              .row.top-half
+                .col-md-6
+                  .pic(style="background-image: url(media/images/composer/9.jpg)")
+                .col-md-6.half-text-box
+                  
+                  h3  Lorem ipsum dolor.
+                  a.read-more(href="") read more about this
+
+            
+                  
+          .row.floor-two
+            .col-md-4
+              .row.top-half
+                .col-md-6
+                  .pic(style="background-image: url(media/images/composer/4.jpg)")
+                .col-md-6.half-text-box
+                  h3  Lorem ipsum dolor.
+                  a.read-more(href="") read more about this
+              .row.bottom-half
+                .col-md-12
+                  .pic(style="background-image: url(media/images/composer/20.jpg)")
+                  a.big-white-button(href="") 
+                      |Dante
+                      br
+                      |Alighieri  
+              
+            .col-md-4.hover-slider-box
+              .hover-slider-person
+                a(href="") Maddalena Allegranti
+                .item.show
+                  .pic(style="background-image: url(media/images/composer/11.jpg)")
+                .item
+                  .pic(style="background-image: url(media/images/composer/12.jpg)")
+                .item
+                  .pic(style="background-image: url(media/images/composer/13.jpg)")
+            .col-md-2.text-box
+              
+              h3  Lorem ipsum dolor sit amet, consectetur adipisicing.
+              a.read-more(href="") read more about this
+            .col-md-2.pic-box
+              .pic(style="background-image: url(media/images/composer/12.jpg)")
+              a(href="") 
+                span Adelaide Borghi-Mamo  
+            
+            
+            
+            
+                  
+            
+    include includes/footer
+    
+    
+  

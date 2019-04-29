@@ -1,0 +1,7 @@
+.profile-page form textarea.form-control {
+    height: auto;
+}
+
+.profile-page .box .box-footer a:not(:last-of-type) {
+    margin-right: 30px;
+}

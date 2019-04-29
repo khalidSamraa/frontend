@@ -1,0 +1,118 @@
+.invitations {
+    padding-bottom: 50px;
+    padding-top: 40px;
+}
+
+.invitations form .form-control {
+    border-radius: 5px;
+    border: 1px solid #808080;
+    opacity: 0.6;
+    color: #313131;
+    font-size: 18px;
+    font-weight: 400;
+    height: 30px;
+    background-color: #ffffff;
+    padding: 5px;
+}
+
+.invitations form label {
+    font-size: 18px;
+    margin-bottom: 5px;
+    display: inline-block;
+    color: #313131;
+    font-weight: 400;
+}
+
+.invitations h2 {
+    color: #313131;
+    font-size: 28px;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 14px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #a6a6a6;
+    text-align: center;
+}
+
+.invitations form .form-group {
+    margin-bottom: 24px;
+    height: auto;
+}
+
+.invitations form .form-group:last-of-type {
+    margin-bottom: 0;
+}
+
+.invitations form textarea.form-control {
+    height: auto;
+}
+
+.invitations .box {
+    border-radius: 5px;
+    border: 1px solid #ebebeb;
+    padding: 13px 32px 30px;
+    position: relative;
+    margin-bottom: 36px;
+    min-height: 131px;
+}
+
+.invitations .centered-btn .btn.black {
+    min-width: 200px;
+    text-transform: none;
+}
+
+.invitations .centered-btn {
+    text-align: center;
+}
+
+.invitations .btn.black.small {
+    margin-bottom: 8px;
+    padding: 10px 19px 8px;
+    text-transform: none;
+    font-size: 16px;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.invitations .invitation-contacts .box {
+    padding: 10px 20px;
+}
+
+.invitations .invitation-contacts .box p {
+    margin-bottom: 10px;
+}
+
+.invitations .invitation-contacts .modal__icon {
+    display: none;
+}
+
+.invitations .invitation-contacts .modal .modal__content {
+    padding: 50px 50px 20px;
+    max-height: calc(100vh - 100px);
+    overflow: auto;
+}
+
+.invitations .invitation-contacts .btn.black {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.invitations .invitation-contacts .close {
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.invitations .radios-wrp {
+    display: flex;
+    justify-content: space-between;
+}
+
+.invitations .radios-wrp .radio .label {
+    font-size: 18px;
+    color: #313131;
+    font-weight: 400;
+}

@@ -1,0 +1,11 @@
+.header__search-box-icon {
+  background-image: url(/media/images/icon/search.svg);
+}
+
+.header__ctx-dropdown {
+  z-index: 9;
+}
+
+.header__user-box {
+  transform: translateX(0%) !important;
+}

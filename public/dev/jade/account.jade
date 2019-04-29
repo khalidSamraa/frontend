@@ -1,0 +1,40 @@
+doctype html
+html(lang='en')
+  head
+  
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title musinote | account
+    meta(name='description', content='')
+    meta(name='keywords', content='')
+    meta(name='author', content='')
+    link(rel='shortcut icon', href='favicon.ico')
+    link(rel='stylesheet', href='css/main.css')
+    script.
+      document.documentElement.className = 'js';
+      $(document).ready(function () {
+        $("header").addClass('big');
+      });
+  body.loading
+    include includes/header
+    
+    main 
+      section.account
+        .container-fluid
+          .row.account-tab-nav
+            .col-md-12
+              ul#tab.jtab-ul
+                li.active
+                  a(href='#' id='dashboard') Dashboard
+                li
+                  a(href='#' id='library') Library
+                li
+                  a(href='#' id='payment') Payment
+                li
+                  a(href='#' ) Sign out
+          
+            
+    include includes/footer
+    
+      

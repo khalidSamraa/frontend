@@ -1,0 +1,43 @@
+.relations .btn-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.relations .btn {
+  font-size: 14px;
+  margin-bottom: 10px;
+  border: none;
+  transition: 0.1s;
+}
+
+.relations .btn:hover {
+  background-color: #c3c3c3;
+  color: #313131;
+}
+
+.relations .more {
+  position: relative;
+}
+
+.relations .more ul {
+  position: absolute;
+  left: 0;
+  top: 35px;
+  background-color: #fff;
+  z-index: 999;
+}
+
+.relations .submenu__item {
+  border: none !important;
+  padding: 3px;
+}
+
+.relations .table-cell {
+  margin-bottom: 20px;
+  min-height: 50vh;
+}
+
+.relations .more a {
+  font-size: 30px;
+  text-decoration: none;
+}

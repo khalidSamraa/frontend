@@ -1,0 +1,149 @@
+header
+  .container-fluid
+    .row
+      .col-md-4.col-sm-4.col-xs-4.left-side 
+        .open-menu-box
+          button.open-menu
+            span
+            span
+            span 
+        
+        .open-search-box
+          button
+            span.search-icon(style="background-image: url(media/images/icon/search.svg)")
+      .col-md-4.col-sm-4.col-xs-4
+        .logo-box
+          a.logo(href="index.html")
+            img(src="media/images/logo.png", alt="")
+      .col-md-4.col-sm-4.col-xs-4.right-side
+        .lang-box
+          .lang-list
+            a.active(href="") English
+            a(href="") Deutsch
+          span.lang-icon(style="background-image: url(media/images/icon/lang.svg)")
+        .user-box
+          a(href="login.html")
+            span.user-icon(style="background-image: url(media/images/icon/user.svg)")
+        .cart-box
+          a(href="cart.html")
+            span.cart-icon(style="background-image: url(media/images/icon/cart.svg)")
+            span.cart-amount 3
+  //.under-header
+    .row.main-catalog-links
+      .col-md-12
+        ul.catalog-links-menu
+          li.active
+            a(href="") 
+              |Noten für Instrumente
+            ul.drop
+              li.active
+                a(href="") Tasten
+              li
+                a(href="") Streicher
+              li
+                a(href="") Bläser
+              li
+                a(href="") Zupfinstrumente
+              li
+                a(href="") Schlaginstrumente
+              li
+                a(href="") Harmonika
+          li
+            a(href="") 
+              | Orchester / Ensemble
+            ul.drop
+              li
+                a(href="") Orchester
+              li
+                a(href="") Bläser
+              li
+                a(href="") Kammermusik
+              li
+                a(href="") Band
+              li
+                a(href="") Zupfensembles
+              li
+                a(href="") Flexibles Ensemble
+          li
+            a(href="") 
+              |Chor / Gesang
+            ul.drop
+              li
+                a(href="") Chor
+              li
+                a(href="") Gesang
+          li
+            a(href="") 
+              |Musik unterrichten
+            ul.drop
+              li
+                a(href="") Kita & Elementare Musikerziehung
+              li
+                a(href="") Grundschule
+              li
+                a(href="") Sekundarstufen
+              li
+                a(href="") Geragogik / Senioren
+              li
+                a(href="") Studium
+              li
+                a(href="") Tasten
+              li
+                a(href="") Streicher
+              li
+                a(href="") Bläser
+              li
+                a(href="") Zupfinstrumente
+              li
+                a(href="") Schlaginstrumente
+              li
+                a(href="") Gesang
+          li
+            a(href="") 
+              |Multimedia
+            ul.drop
+              li
+                a(href="") Bücher
+              li
+                a(href="") CDs, Multimedia
+              li
+                a(href="") Zubehör / Geschenke
+                
+                
+                
+                
+                
+
+.search-header-box
+  .row.search-form-box
+    
+    .col-md-12
+      form(action="")
+        .search-input
+          input.search-text(type="text" placeholder="Search...")
+          button.send-search
+            span.search-icon(style="background-image: url(media/images/icon/search.svg)")
+            | Find
+  .row.search-controls
+    .col-md-12
+      ul#search-filters.jtab-ul
+        li
+          a(href='#' id='composer')
+            p 
+              | Composer
+        li
+          a(href='#' id="era")
+            p 
+              | Era
+        li
+          a(href='#' id="instrument")
+            p 
+              | Instrument 
+        li
+          a(href='#' id='durtion')
+            p 
+              | Durtion
+        li
+          a(href='#' id='more')
+            p 
+              | More                

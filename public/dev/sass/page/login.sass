@@ -1,0 +1,156 @@
+.login-area
+  border-top: 1px solid
+  .container-fluid, .row
+    margin: 0
+    padding: 0
+  form
+    padding: 0px 0 25px
+    p
+      margin: 0
+      color: #999
+      font-size: 16px
+      margin-bottom: 25px
+      span
+        color: red
+        
+
+.sign-in, .sign-up
+  padding: 0
+  text-align: center
+  h3
+    margin: 0
+    font-size: 32px
+    font-weight: 100
+    margin-bottom: 35px
+    border-bottom: 1px solid
+    padding: 25px 0 25px
+    
+.text-input
+  input
+    display: block
+    border: 1px solid
+    border-bottom: 0
+    padding: 1.25em 1em
+    max-width: 320px
+    margin: auto
+    width: 100%
+    font-size: 18px
+  &:last-child
+    input
+      border-bottom: 1px solid
+
+.submit-input
+  padding: 45px 0
+  border-top: 1px solid
+  input
+    display: block
+    border: 1px solid
+    padding: 2em 1em
+    max-width: 200px
+    margin: auto
+    width: 100%
+    font-size: 12px
+    text-transform: uppercase
+    letter-spacing: 2px
+    background: #fff
+    font-weight: 600
+      
+.forgot
+  a
+    display: block
+    text-align: center
+    font-size: 12px
+    text-transform: uppercase
+    letter-spacing: 2px
+    color: #000
+    text-decoration: none
+
+
+      
+.sign-in
+  
+      
+.sign-up
+  border-left: 1px solid
+
+.black
+  background: #000 !important
+  color: #fff !important
+  
+  
+  
+  
+.modal
+  position: fixed
+  width: 100%
+  height: 100vh
+  top: 0
+  left: 0
+  z-index: 1000
+  overflow: hidden
+  opacity: 0
+  visibility: hidden
+  transition: all .25s ease-in-out
+  .open-modal
+    position: absolute
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    background: rgba(0, 0, 0, 0.7)
+    border: 0
+    z-index: 5
+    transition: all .25s ease-in-out
+    &:active
+      background: rgba(0, 0, 0, 0.2)
+    &:after
+      content: 'close ×'
+      position: absolute
+      right: 50px
+      top: 50px
+      color: #fff
+      font-size: 32px
+      font-weight: 100
+  .modal__content
+    position: absolute
+    padding: 100px 25px
+    bottom: 0
+    left: 0
+    width: 100%
+    background: #fff
+    z-index: 10
+    text-align: center
+    transform: translateY(100%)
+    transition: transform .35s
+    transition-delay: .20s
+    p
+      margin: 0
+      margin-bottom: 25px
+      transform: translateY(35px)
+      transition: transform .35s
+      transition-delay: .35s
+      
+    .text-input, .submit-input
+      display: inline-block
+      margin: 0
+      border: 0
+      padding: 0
+      vertical-align: middle
+      transform: translateY(60px)
+      transition: transform .35s
+      transition-delay: .45s
+    .text-input
+      input
+        border: 1px solid
+        padding: 1em
+        max-width: 550px
+    .submit-input
+      display: inline-block
+      input
+        border: 1px solid
+        padding: 1.85em
+  &.show
+    opacity: 1
+    visibility: visible
+    .modal__content, .text-input, .submit-input, p
+      transform: translateY(0px)

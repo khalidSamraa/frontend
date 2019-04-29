@@ -1,0 +1,90 @@
+doctype html
+html(lang='en')
+  head
+  
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title musinote | cart
+    meta(name='description', content='')
+    meta(name='keywords', content='')
+    meta(name='author', content='')
+    link(rel='shortcut icon', href='favicon.ico')
+    link(rel='stylesheet', href='css/main.css')
+    script.
+      document.documentElement.className = 'js';
+      $(document).ready(function () {
+        $("header").addClass('big');
+      });
+  body.loading
+    include includes/header
+    
+    main 
+      section.cart-page
+        .container-fluid
+          .row
+            .col-md-12.col-sm-12.col-xs-12.cart-big-title
+              h3 Shopping Cart
+              
+              
+              
+          .row.cart-item-title
+            .left-side.col-md-6.col-sm-6.col-xs-12
+              p Item
+            .right-side.col-md-6.col-sm-6.col-xs-12
+              p Price
+
+
+          .row.cart-item
+            .left-side.col-md-6.col-sm-6.col-xs-12
+              p
+                a(href="") The Children of David
+                span Five Modern Psalms
+              .pic(style="background-image: url(media/images/cover/1.jpg)")
+            .right-side.col-md-1.col-sm-1.col-xs-6
+              p.price 24,50 €
+            .col-md-1.col-sm-1.col-xs-6
+              button ×
+          .row.cart-item
+            .left-side.col-md-6.col-sm-6.col-xs-12
+              p
+                a(href="") Das Fetenbuch für Alt und Jung
+                span 100 Lieder und Hits zum Mitsingen, leicht arrangiert für Gesang und Gitarre Die beliebtesten Songs für Feiern und Feste
+              .pic(style="background-image: url(media/images/cover/2.jpg)")
+            .right-side.col-md-1.col-sm-1.col-xs-6
+              p.price 14,50 €
+            .col-md-1.col-sm-1.col-xs-6
+              button ×
+          .row.cart-item
+            .left-side.col-md-6.col-sm-6.col-xs-12
+              p
+                a(href="") Mein Weihnachtsbuch
+                span 40 Weihnachtslieder mit vollständigen Texten (Hardcover)
+              .pic(style="background-image: url(media/images/cover/3.jpg)")
+            .right-side.col-md-1.col-sm-1.col-xs-6
+              p.price 18,50 €
+            .col-md-1.col-sm-1.col-xs-6
+              button ×
+
+
+
+          .row.cart-item-subtotal
+            .left-side.col-md-6.col-sm-6.col-xs-6
+              p Subtotal:
+            .right-side.col-md-6.col-sm-6.col-xs-6
+              p.price 57.50 €
+              p.vat 
+                |reduced VAT (7%) + 
+                span 2.55 €
+          .row.cart-go-checkout
+            .col-md-6.col-sm-6.col-xs-12
+              a.back-shopping-button(href="#") ← Continue shopping
+            .col-md-6.col-sm-6.col-xs-12
+              a.checkout-button(href="") Ckeck out
+                  
+              
+            
+            
+    include includes/footer
+    
+      

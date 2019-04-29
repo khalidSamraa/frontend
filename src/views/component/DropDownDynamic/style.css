@@ -1,0 +1,68 @@
+.dropdown-dynamic {
+    position: relative;
+}
+
+.dropdown-dynamic .triger {
+    padding: 0;
+    cursor: pointer;
+}
+
+.dropdown-dynamic .menu {
+    position: absolute;
+    top: calc(100% + 10px);
+    left: calc(50% - 20px);
+    display: none;
+    z-index: 999;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0px 5px 2px rgba(34,36,38,.15);
+    min-width: 190px;
+}
+
+.dropdown-dynamic .menu.right {
+    right: calc(50% - 20px);
+    left: auto;
+}
+
+.dropdown-dynamic .menu.active {
+    display: block;
+}
+
+.dropdown-dynamic .menu:after {
+    position: absolute;
+    top: -3px;
+    left: 16px;
+    box-shadow: -1px -1px 0 0 rgba(34,36,38,.15);
+    transform: rotate(45deg);
+    display: block;
+    pointer-events: none;
+    content: '';
+    visibility: visible;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    width: .5em;
+    height: .5em;
+    box-shadow: -1px -1px 0 0 rgba(34,36,38,.15);
+    background: #fff;
+    z-index: 2;
+}
+
+.dropdown-dynamic .menu.right:after {
+    right: 16px;
+    left: auto;
+}
+
+.dropdown-dynamic .menu > .btn {
+    background-color: transparent;
+    border: 0;
+    width: 100%;
+    color: #444444;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-dynamic .menu > .btn i {
+    margin-right: 10px;
+    font-size: 14px;
+}

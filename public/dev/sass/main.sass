@@ -1,0 +1,763 @@
+
+@import "variables/color.sass"
+@import "variables/media.sass"
+@import "variables/typography.sass"
+@import "variables/space.sass"
+@import "variables/utils.sass"
+@import "variables/control.sass"
+@import "variables/button.sass"
+@import "variables/css-class.sass"
+
+// vendor
+@import "vendor/normalize.css"
+@import "vendor/slick.css"
+
+// elements 
+@import "elements/header.sass" 
+@import "elements/footer.sass" 
+
+// page
+@import "page/catalog.sass"
+@import "page/product.sass"
+@import "page/login.sass"
+@import "page/checkout.sass" 
+@import "page/cart.sass"
+@import "page/account.sass" 
+
+
+// http://flexboxgrid.com
+@import "vendor/flexboxgrid.min.css"
+
+ 
+// Main
+body
+  font-size: 18px
+  max-width: 1600px
+  margin: auto
+  border-left: 1px solid #000
+  border-right: 1px solid #000
+  
+a
+  &:hover
+    text-decoration: underline
+  
+// style for main page  
+main
+  overflow: hidden
+  
+  
+  
+  
+  
+  
+// search box style  
+.search-input
+  padding: 50px 100px
+  position: relative
+  .search-text
+    padding: 50px
+    width: 100%
+    display: block
+    border: 0
+    border: 1px solid #000
+    outline: none
+    font-size: 24px
+    text-align: left
+    &::placeholder
+      font-weight: 100
+  .send-search
+    position: absolute
+    right: 100px
+    top: 50px
+    background: transparent
+    border: 0
+    padding: 50px
+    height: calc(100% - 100px)
+    border-left: 1px solid #000
+    text-transform: uppercase
+    letter-spacing: 2px
+    font-size: 14px
+    font-weight: 600
+    .search-icon
+      width: 16px
+      height: 16px
+      background-size: contain
+      background-repeat: no-repeat
+      display: inline-block
+      margin-right: .5em
+      vertical-align: bottom
+.search-area
+  .hero-text
+    padding: 50px 50px 25px
+    h3
+      text-align: center
+      font-size: 34px
+      font-weight: 100
+      text-align: center
+      margin: 0
+      span
+        border-bottom: 1px solid #000
+  .slider-artist
+    overflow: hidden
+    margin-top: 35px
+    height: 42px
+    .item
+      text-align: center
+      a
+        text-decoration: none
+        display: block
+        color: #999
+        font-size: 16px
+        letter-spacing: 1px
+        padding: 5px
+        .pic
+          width: 30px
+          height: 30px
+          border-radius: 100%
+          display: inline-block
+          vertical-align: middle
+          margin-right: 1em
+          background-size: cover
+          background-position: center
+          position: relative
+          top: -4px    
+  .row
+    border: 1px solid #000
+    border-bottom: 0
+  
+  
+.search-controls .jtab-ul
+  padding: 0
+  margin: 0
+  border-bottom: 1px solid #000
+  overflow: hidden
+  list-style: none
+  li
+    border-left: 1px solid #000
+    border-right: 0
+    width: 20%
+    float: left
+    cursor: pointer
+    transition: all .2s ease-in-out  
+    position: relative
+
+    a
+      padding: 75px 50px
+      display: block
+      color: #000
+      text-decoration: none
+    //.scene
+      width: 40px
+      height: 40px
+      display: block
+      opacity: .6
+      text-align: center
+      margin: 25px auto 35px
+      img
+        width: 100% 
+    p
+      margin: 0
+      font-size: 22px
+      position: relative
+      line-height: 1
+      text-align: center
+      &:after
+        content: ''
+        display: inline-block
+        vertical-align: middle
+        margin-left: .5em
+        width: 0
+        height: 0
+        border-left: 4px solid transparent
+        border-right: 4px solid transparent
+        border-top: 8px solid #000
+    &:first-child
+      border-left: 0
+    &:hover
+      background: #eee
+    &.active
+      background: #ddd
+      p
+        &:after
+          border-top: 0px solid #000
+          border-bottom: 8px solid #000
+
+        
+      
+.search-form-box
+  position: relative
+  overflow: hidden
+
+.bg
+  position: absolute
+  width: 100%
+  height: 100%
+  top: 0
+  left: 0
+  z-index: -1
+  background-size: cover
+  background-position: 0% 33%
+  animation: scaleBg 65s infinite
+  -webkit-filter: grayscale(100%)
+  filter: grayscale(100%)
+
+@keyframes scaleBg
+  0%, 100
+    transform: scale(1)
+  50%
+    transform: scale(1.2)
+      
+      
+     
+// scene on main page  
+//.scene.duration-scene
+  width: 100% !important
+  padding-top: 5px
+//.timer
+  overflow: hidden
+  position: relative
+  width: 100%
+  .cell
+    width: 0.6em
+    height: 40px
+    font-size: 16px
+    overflow: hidden
+    position: relative
+    display: inline-block
+  .numbers
+    width: 0.6em
+    line-height: 40px
+    position: absolute
+    left: 0
+    top: 0
+  .moveten
+    animation: moveten 1s steps(10, end) infinite
+  .movesix
+    animation: movesix 1s steps(6, end) infinite
+  .second
+    animation-duration: 10s
+  .tensecond
+    animation-duration: 60s
+  .milisecond
+    animation-duration: 1s
+  .tenmilisecond
+    animation-duration: 0.1s
+  .minute
+    animation-duration: 600s
+  .tenminute
+    animation-duration: 3600s
+@keyframes moveten
+  0%
+    top: 0
+  100%
+    top: -400px
+@keyframes movesix
+  0%
+    top: 0px
+
+  100%
+    top: -240px
+  
+
+  
+  
+  
+// filters scenes
+
+//.scene.more-scene
+  width: 120px !important
+  padding-top: 15px
+  margin: auto
+  .dot
+    span
+      display: inline-block
+      width: 10px
+      height: 10px
+      border-radius: 100%
+      background: #000
+      margin-right: .5em
+      border: 1px solid transparent
+      transition: all .2s
+      &:last-child
+        margin: 0
+  &:hover
+    background: #eee
+    .dot
+      span
+        background: transparent
+        border-color: #000
+  
+//.era-scene
+  width: 120px !important
+  padding-top: 10px
+//.dot-line
+  position: relative
+  &:after
+    content: ''
+    position: absolute
+    height: 1px
+    background: #000
+    width: 100%
+    top: 12px
+    left: 0
+    z-index: -1
+  span
+    display: inline-block
+    width: 10px
+    height: 10px
+    border: 1px solid #000
+    background: #fff
+    border-radius: 100%
+    margin-right: .75em
+    &:last-child
+      margin: 0
+    &:nth-child(2)
+      background: #000  
+  
+  
+    
+    
+    
+// filters content    
+.jtab-content
+  border-bottom: 1px solid #000
+  display: none
+.jtab-content.era
+  padding-top: 75px
+  padding-bottom: 75px
+  position: relative
+  overflow: hidden
+  .era-line
+    position: absolute
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0
+    width: 100%
+    margin: auto
+    height: 1px
+    background: #000
+    border-radius: 25px
+    z-index: -1
+  .era-checkbox-form
+    width: 90%
+    margin: auto
+  .checbox-item
+    float: left
+    width: 25%
+    position: relative
+
+    input
+      opacity: 0
+      position: absolute
+      &:checked + label
+        color: #fff
+        &:after
+          background: #000
+          border-color: #222
+    label
+      display: block
+      text-align: center
+      cursor: pointer
+      height: 150px
+      padding-top: 55px
+      transition: all .2s ease-in-out
+      .name
+        font-size: 24px
+      .years
+        color: #555
+        display: block
+        margin-top: 10px
+        font-size: 12px
+        color: #999
+      &:hover
+        &:after
+          background: #ccc
+        .name
+          text-decoration: underline
+
+      &:after
+        content: ''
+        width: 160px
+        height: 155px
+        background: #fff
+        border-radius: 100%
+        position: absolute
+        border: 1px solid #000
+        top: 0px
+        left: 0
+        right: 0
+        margin: auto
+        z-index: -1
+        transition: all .2s ease-in-out
+.jtab-content.composer, .jtab-content.more
+  padding-top: 50px
+  padding-bottom: 50px
+  overflow: hidden
+  ul
+    padding: 0
+    margin: 0
+    list-style: none
+    li
+      float: left
+      width: 25%
+      padding: 0 50px
+      h2
+        font-size: 30px
+      a
+        display: block
+        color: #000
+        text-decoration: none
+        font-size: 18px
+        margin-bottom: .75em
+        span
+          font-size: 14px
+          display: inline-block
+          padding-left: .5em
+          color: #555
+          vertical-align: top
+          font-style: italic
+        &:hover
+          text-decoration: underline
+
+
+          
+          
+          
+
+.jtab-content.instrument
+  padding-top: 75px
+  padding-bottom: 50px
+  overflow: hidden
+  ul
+    padding: 0
+    margin: 0
+    list-style: none
+    li
+      float: left
+      width: 25%
+      padding: 0 50px
+      a
+        text-decoration: none
+        font-size: 18px
+        color: #000
+        margin-bottom: .75em
+        display: block
+        line-height: 1.4
+        span
+          font-size: 14px
+          display: inline-block
+          vertical-align: top
+          padding-left: .5em
+          font-style: italic
+          color: #999
+          text-decoration: none !important
+        &:hover
+          text-decoration: underline
+      
+        
+
+        
+.jtab-content.duration
+  padding: 50px
+  position: relative
+  &:after
+    content: ''
+    position: absolute
+    width: 100%
+    height: 100px
+    background: #ddd
+    left: 0
+    bottom: 0
+    z-index: -2
+  .duration-slider
+    position: relative
+    height: 100px
+    .slider-line
+      position: relative
+      height: 1px
+      background: #000
+      z-index: 10
+      top: 50px
+    .slider-dot
+      position: absolute
+      top: 0
+      bottom: 0
+      height: 50px
+      margin: auto
+      cursor: pointer
+      text-align: center
+      &:after
+        content: ''
+        width: 50px
+        height: 50px
+        border-radius: 100%
+        display: block
+        background: #000
+      span
+        font-size: 16px
+        letter-spacing: 1px
+        display: block
+        margin-top: -16px
+      &.min
+        left: 20%
+      &.max
+        right: 30%
+    svg
+      position: absolute
+      width: 100%
+      left: 0
+      top: 38px
+      height: 100%
+      z-index: -1
+        
+        
+        
+        
+
+
+        
+      
+      
+      
+      
+// news grid style
+
+.news-grid
+  
+  .half-text-box
+    position: relative
+  .read-more
+    position: absolute
+    left: 0
+    bottom: 0px
+    border-top: 1px solid
+    width: 100%
+    font-size: 12px
+    padding: 25px
+    text-transform: uppercase
+    font-weight: 400
+    color: #000
+    display: block
+    margin-top: 50px
+    line-height: 1.6
+    letter-spacing: 1px
+    text-decoration: none
+  .container-fluid
+    padding: 0
+  .floor-one
+    .col-sm-4
+      border-right: 1px solid #000
+      
+      
+  // for all flopr    
+  .top-half
+    border-top: 1px solid #000
+    height: 275px
+    .col-md-6
+      padding: 50px 25px
+    .col-md-6:first-child
+      border-right: 1px solid #000
+    .pic
+      width: 130px
+      height: 130px
+      background-size: cover
+      background-position: center
+      margin: 25px auto
+      -webkit-filter: grayscale(100%)
+      filter: grayscale(100%)
+      transition: all 1.5s ease
+      &:hover
+        transform: scale(1.2)
+    h3
+      margin: 0
+      font-size: 32px
+      font-weight: 100
+
+  .bottom-half
+    height: 250px
+    position: relative
+    padding: 50px
+    .pic
+      position: absolute
+      width: 100%
+      height: 100%
+      left: 0
+      top: 0
+      background-size: cover
+      background-position: center
+      -webkit-filter: grayscale(100%)
+      filter: grayscale(100%)
+      z-index: -1
+      transition: all 1s
+    &:hover
+      .pic
+        background-position: 0 -25px
+      
+    .big-white-button
+      display: block
+      padding: 45px
+      font-size: 24px
+      text-align: center
+      text-decoration: none
+      color: #000
+      border: 1px solid #000
+      background: #fff
+        
+        
+        
+  .hover-slider-box
+    padding: 50px
+  .hover-slider-person
+    position: relative
+    height: 425px
+    a
+      display: block
+      width: 200px
+      height: 80px
+      text-align: center
+      color: #fff
+      text-decoration: none
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      margin: auto
+      display: block
+      transform: rotate(-90deg)
+      font-size: 32px
+      z-index: 5
+      pointer-events: none
+    .item
+      float: left
+      width: 33%
+      height: 100%
+      .pic
+        position: absolute
+        top: 0
+        bottom: 0
+        left: 0
+        right: 0
+        margin: auto
+        width: 25vw
+        height: 25vw
+        -webkit-filter: grayscale(100%)
+        filter: grayscale(100%)
+        background-size: cover
+        background-position: center
+        opacity: 0
+        transition: all .2s ease-in-out
+        border-radius: 100%
+        border: 1px solid #000
+        z-index: -2
+      &:hover
+        .pic
+          opacity: 1
+      &.show
+        .pic
+          opacity: 1 !important
+          
+  .pic-box
+    padding: 50px
+    .pic
+      position: absolute
+      width: 100%
+      height: 100%
+      left: 0
+      top: 0
+      background-size: cover
+      z-index: -1
+      -webkit-filter: grayscale(100%)
+      filter: grayscale(100%)
+      transition: all 1s
+    &:hover
+      .pic
+        background-position: -75px
+    a
+      background: #fff
+      border: 1px solid #000
+      display: block
+      height: 100%
+      text-decoration: none
+      position: relative
+      span
+        position: absolute
+        bottom: 0
+        top: 0
+        left: -25%
+        right: 0
+        margin: auto
+
+        width: 200px
+        height: 50px
+        font-size: 24px
+        text-align: center
+        color: #000
+        background: #fff
+        transform: rotate(-90deg)
+        display: block
+      
+  .text-box  
+    padding: 50px 25px
+    height: 525px
+    position: relative
+    h3
+      font-size: 32px
+      font-weight: 100
+      margin: 0
+  .two-col-box
+    .col-md-6
+      padding: 50px 25px
+      height: 525px
+      position: relative
+      &:first-child
+        border-right: 1px solid #000
+    
+    h3
+      font-size: 32px
+      font-weight: 100
+      margin: 0
+    
+        
+  .floor-two
+    border-top: 1px solid
+    .col-md-4
+      border-right: 1px solid #000
+      height: 525px
+      &:last-child
+        border: 0 !important
+    .hover-slider-person
+      .pic
+        border-radius: 0
+    .text-box
+      border-right: 1px solid
+    .pic-box
+      position: relative
+      border-right: 1px solid
+      .pic
+        top: 0
+        
+    .top-half
+      border-top: 0
+      border-bottom: 1px solid
+      .pic
+        border-radius: 100%
+      .col-md-6
+        &:first-child
+
+        &:last-child
+
+        
+        
+        
+.releted
+  padding: 50px
+  border-bottom: 1px solid
+  h5
+    margin: 0
+    font-size: 12px
+    text-transform: uppercase
+    font-weight: 100
+    text-align: center
+    letter-spacing: 1px
